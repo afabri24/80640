@@ -1,0 +1,55 @@
+#sp2{
+    color: crimson;
+}
+
+#sp1{
+    margin:  100px;
+    padding: 100px;
+    color: blue;
+ 
+}
+p,span{
+    color: greenyellow;
+}
+
+.fuente{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span::after{
+    content: '\A'; white-space:pre;
+}
+
+div ~ p{
+    color: dodgerblue;
+}
+
+div > p{
+    color: violet;
+}
+
+a:hover{
+    color: aqua;
+    font-size: 22px;
+}
+a:visited{
+    color: aquamarine;
+    font-size: 2px;
+}
+#div1{
+    background-color: darkorchid;
+    padding: 25px;
+    text-align: center;
+}
+#div1:hover{
+    background-color: blue;
+}
+.azulito{
+    background-color: purple;
+    padding: 25px;
+    text-align: center;
+}
+a[target]{
+    background-color: salmon;
+    font-size: 100px;
+}
