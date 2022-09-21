@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -8,58 +8,90 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-color: lightskyblue;
-        } 
-    </style>
+<style>
+    body {
+        background-color: lightskyblue;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina ejemplo 2</title>
 </head>
+
 <body>
     <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">navbar fuera de canvas</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">fuera de canvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a class="navbar-brand" href="#">navbar fuera de canvas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">fuera de canvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nav simple.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Una accion</a></li>
+                                <li><a class="dropdown-item" href="#">otra accion</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">algo mas aqui</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="nav simple.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Una accion</a></li>
-                    <li><a class="dropdown-item" href="#">otra accion</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">algo mas aqui</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
+    <h1>La navbar nos sigue</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaSript" height="400" width="400">
+    <h4>Esta es la imagen que se uso para la barra</h4>
+    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quaerat illum expedita voluptates cum perspiciatis
+        alias nulla quae impedit voluptatibus, ipsa beatae odit maxime quam, illo ex molestias aperiam voluptas cumque
+        commodi. Nisi excepturi eveniet fugiat ut fugit? Labore sint reprehenderit quos fuga debitis architecto unde hic
+        aliquid molestias eius minus vel distinctio, atque rerum, iure, magni ex quam doloremque. Quaerat, repudiandae
+        nemo! Magni, rem aliquam omnis impedit ipsam nesciunt! Consectetur maiores accusamus nulla deleniti veritatis,
+        nam nesciunt voluptatibus, vero, tempore fuga beatae a eligendi adipisci distinctio perspiciatis. Laboriosam,
+        corporis? Molestias provident tempore odit deleniti iure, molestiae sapiente voluptas? Delectus, commodi?
+        Dignissimos atque, ex odit corrupti beatae a eligendi suscipit. Culpa dolorem perferendis sapiente maiores
+        deserunt cupiditate quaerat architecto beatae, voluptatem, illum suscipit minima perspiciatis nam nobis, nemo ex
+        ratione saepe aliquam non est error dicta sunt. Iste, non atque alias error sint repellendus provident
+        voluptatem! Dolore repudiandae veniam quos sit excepturi, dolorem quisquam praesentium, provident alias laborum
+        id iure soluta aperiam quam minima deserunt quaerat odit omnis eos fuga voluptas! Modi quaerat praesentium, ab
+        eos mollitia repudiandae, velit voluptatum saepe incidunt ipsam repellat non molestias laudantium, temporibus
+        quae accusamus maiores perspiciatis repellendus nisi sint rerum? Delectus porro quidem repudiandae expedita
+        praesentium corporis quaerat necessitatibus accusamus possimus. Aliquam, quis nemo. Error corporis quis dolores
+        sint? Magni eum consequuntur ab ipsa beatae dolorem voluptatum magnam quia! Autem sunt saepe voluptates
+        repudiandae quos molestiae necessitatibus numquam, laboriosam ipsa vitae, quam pariatur ducimus ut ab
+        reprehenderit corporis adipisci consequuntur, aut rerum tempora soluta quasi quaerat nam sequi! Voluptas
+        necessitatibus hic dolore earum explicabo repellendus quibusdam quam est animi dignissimos velit sapiente porro
+        qui dolorum tempora nostrum, quod incidunt recusandae excepturi optio. Repudiandae amet ducimus, eveniet, nam
+        architecto atque itaque laboriosam maxime, laudantium harum eaque numquam sequi placeat corrupti quaerat ullam
+        aspernatur nemo molestias!
+    </h3>
 </body>
+
 </html>
