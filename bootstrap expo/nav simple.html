@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+       crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+       crossorigin="anonymous"></script>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <style>
+      *{
+         padding: 0;
+         margin:  0;
+      }
+      body{
+        background-color:  lightskyblue;
+      }
+      .titulo{
+         text-align: center;
+      }
+      .parrafo{
+         text-align: center;
+         padding-bottom: 5px;
+      }
+      .contenedor{
+         padding-top: 30px;
+         padding-bottom: 30px;
+      }
+
+   </style>
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Navbar 1</title>
+   </head>
+
+   <body>
+      <div class="titulo">
+         <h1 >Ejemplos</h1>
+      </div>
+
+      <!-- nav solo con texto con titulo -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav con texto</b></p>
+         <nav class="navbar navbar-light bg-light">
+           <div class="container-fluid">
+             <span class="navbar-brand mb-0 h1">Navbar</span>
+           </div>
+         </nav>
+      </div>
+
+      <!-- nav con texto con link -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav con texto mas link</b></p>
+         <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">Navbar</a>
+         </div>
+        </nav>
+      </div>
+
+      <!-- nav con imagen -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav con una imagen</b></p>
+         <nav class="navbar navbar-light bg-light">
+           <div class="container">
+             <a class="navbar-brand" href="#">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="" width="30" height="24"> Navbar
+             </a>
+           </div>
+         </nav>
+      </div>
+
+      <!-- nav con collapse -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav con collapse (truco)</b></p>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#">Navbar</a>
+
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                 <a class="nav-link" href="#">submenu 1</a>
+                 <a class="nav-link" href="#">submenu 2</a>
+                 <a class="nav-link disabled">submenu 3</a>
+               </div>
+             </div>
+           </div>
+         </nav>
+      </div>
+
+      <!-- nav sin collapse -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav sin collapse</b></p>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#">Navbar</a>
+               <div class="navbar-nav">
+                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                 <a class="nav-link" href="#">Características</a>
+                 <a class="nav-link" href="#">Precios</a>
+                 <a class="nav-link disabled">Deshabilitado</a>
+               </div>
+             </div>
+           </div>
+         </nav>
+      </div>
+
+
+      <!-- nav formulario sin flex -->
+      <div class="contenedor">
+          <p class="parrafo"><b>Nav formulario de busqueda sin flex</b></p>
+         <nav class="navbar navbar-light bg-light">
+           <div class="container-fluid">
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+             </form>
+           </div>
+         </nav>
+      </div>
+
+      <!-- nav formulario con flex -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav formulario de busqueda con flex</b></p>
+         <nav class="navbar navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand">Navbar</a>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+             </form>
+           </div>
+         </nav>
+      </div>
+
+      <!-- nav dropdown-menu simple< -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav dropdown-menu simple</b></p>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="#">Navbar</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">submenu 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">submenu 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        dropdown basico
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">opcion 1</a></li>
+                        <li><a class="dropdown-item" href="#">opcion 2</a></li>
+                        <li><a class="dropdown-item" href="#">opcion 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+      <!-- nav dropdown-menu ampliado< -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav dropdown-menu extendido</b></p>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">submenu1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">submenu2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        submenu 3
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">sub sub-menu1</a></li>
+                        <li><a class="dropdown-item" href="#">sub sub-menu2</a></li>
+                        <ul>sub sub-menu3</a>
+                           <li class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">sub sub-menu1</a></li>
+                              <li><a class="dropdown-item" href="#">sub sub-menu2</a></li>
+                           </li>
+                        </ul>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+      </div>
+
+      <!-- nav con botones< -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav con botones</b></p>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <form class="container-fluid justify-content-start">
+                      <button class="btn btn-outline-success me-2" type="button">Botón 1</button>
+                      <button class="btn btn-outline-success me-2" type="button">Botón 2</button>
+                      <button class="btn btn-outline-success me-2" type="button">Botón 3</button>
+                    </form>
+              </div>
+            </nav>
+      </div>
+
+      <!-- nav personalizado< -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav color personalizado</b></p>
+         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+           <div class="container-fluid">
+             <a class="navbar-brand">Navbar</a>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+             </form>
+           </div>
+         </nav>
+      </div>
+      <!-- nav personalizado< -->
+      <div class="contenedor">
+         <p class="parrafo"><b>Nav color personalizado</b></p>
+         <nav class="navbar navbar-dark bg-primary">
+           <div class="container-fluid">
+             <a class="navbar-brand">Navbar</a>
+             <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+             </form>
+           </div>
+         </nav>
+      </div>
+      <!-- nav personalizado< -->
+      <p class="parrafo"><b>Nav color personalizado</b></p>
+         <nav class="navbar navbar-light" style="background-color: #3CE330;">
+            <div class="container-fluid">
+               <a class="navbar-brand">Navbar</a>
+               <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+               </form>
+           </div>
+         </nav>
+         <!-- nav personalizado< -->
+      <p class="parrafo"><b>Nav color personalizado</b></p>
+         <nav class="navbar navbar-light" style="background-color: #E7FA28;">
+            <div class="container-fluid">
+               <a class="navbar-brand">Navbar</a>
+               <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <button class="btn btn-outline-success" type="submit">Buscar</button>
+               </form>
+           </div>
+         </nav>
+
+
+      <!-- nav colocacion -->
+      <div class="contenedor">
+          <p class="parrafo"><b>Nav colocacion</b></p>
+         <nav class="navbar navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="pagina02.html">Por defecto</a>
+           </div>
+         </nav>
+      </div>
+
+      <!--
+      <nav class="navbar fixed-top navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#">Por defecto</a>
+           </div>
+      </nav>
+      -->
+      <!--
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#">Por defecto</a>
+           </div>
+      </nav>
+      -->
+      <!--
+      <nav class="navbar sticky-bottom navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">inferior</a>
+        </div>
+      </nav>
+      -->
+      <!--
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">superior</a>
+        </div>
+      </nav>
+      -->
+
+      <!-- nav collapse -->
+      <div class="contenedor">
+         <nav class="navbar navbar-dark bg-dark">
+           <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           </div>
+         </nav>
+         <div class="collapse" id="navbarToggleExternalContent">
+           <div class="p-3 mb-2 bg-secondary text-white">
+             <h5 class="text-white h4">informacion 1</h5>
+             
+           </div>
+         </div>
+      </div>
+
+      <!-- nav offcanvas -->
+      <!--
+      <div>
+         <nav class="navbar navbar-light bg-light fixed-top">
+           <div class="container-fluid">
+             <a class="navbar-brand" href="#">OffCanvas</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+               <div class="offcanvas-header">
+                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body">
+                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">opcion 1</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       opcion 2
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                       <li><a class="dropdown-item" href="#">sub menu 1</a></li>
+                       <li><a class="dropdown-item" href="#">sub menu 2</a></li>
+                       <li>
+                         <hr class="dropdown-divider">
+                       </li>
+                       <li><a class="dropdown-item" href="#">sub sub menu 1</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+                 <form class="d-flex" role="search">
+                   <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                   <button class="btn btn-outline-success" type="submit">Buscar</button>
+                 </form>
+               </div>
+             </div>
+           </div>
+         </nav>
+      </div>
+      -->
+   </body>
+</html>

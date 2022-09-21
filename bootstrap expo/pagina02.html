@@ -10,7 +10,7 @@
     crossorigin="anonymous"></script>
     <style>
         body{
-            background-color: lightslategray;
+            background-color: lightskyblue;
         } 
     </style>
 <head>
@@ -20,27 +20,46 @@
     <title>Pagina ejemplo 2</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
-                <a class="navbar-brand" href="pagina01.html">
-                  <img src="https://i.pinimg.com/originals/4e/9a/80/4e9a809862f1bb0e1d4400e1b3644474.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                </a>
-            <a class="navbar-brand" href="#" id="a01">Esta es la pagina 2</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" id="b01">
-                <span class="navbar-toggler-icon" id="s01"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="pagina01.html" id="a02">Inicio</a>
-                    </li>
-                </ul>
+          <a class="navbar-brand" href="#">navbar fuera de canvas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">fuera de canvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="nav simple.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Una accion</a></li>
+                    <li><a class="dropdown-item" href="#">otra accion</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">algo mas aqui</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </div>
-    </nav>
-    <img src="https://i.pinimg.com/originals/4e/9a/80/4e9a809862f1bb0e1d4400e1b3644474.jpg" alt="ANIMUS" height="100" width="100">
-    <h4>Esta es la imagen que se uso para la barra</h4>
+      </nav>
 </body>
 </html>
