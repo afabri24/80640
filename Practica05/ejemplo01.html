@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo de getElementById y Tagname</title>
+    <script type="text/javascript"> 
+        function cambiarColor(color){
+            console.log("el color recibido es :",color);
+            let elem=document.getElementById("texto1");
+            elem.style.color=color;
+             elem=document.getElementById("texto3");
+            elem.style.color=color;
+        }
+        function cambiarColor2(color){
+            console.log("el color recibido es :",color);
+            let elem=document.getElementById("texto2");
+            elem.style.color=color;
+        }
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+        }
+        function cambiarColores() {
+            let c=document.getElementsByTagName("p");
+            var r=getRandomInt(0,256);
+            var g=getRandomInt(0,256);
+            var b=getRandomInt(0,256);
+            // c=[0,1,2,3];
+            // var arr=[].slice.call(c);
+            // arr.forEach(element => {
+            //     console.log(element);
+            // });
+            for (let index = 0; index < c.length; index++) {
+                c[index].style.color= "#"+(r).toString(16)+(g).toString(16)+(b).toString(16);
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="texto1">simple texto</p>
+    <p id="texto2">simple texto</p>
+    <p id="texto3">simple texto</p>
+    <button onclick="cambiarColor('blue'); cambiarColor2('yellow')">azul</button>
+    <button onclick="cambiarColor('red'); cambiarColor2('gold')">rojo</button>
+    <button onclick="cambiarColores('green')">colores</button>
+</body>
+</html>
