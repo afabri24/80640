@@ -23,18 +23,32 @@
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min) + min);
         }
-        function cambiarColores() {
-            let c=document.getElementsByTagName("p");
-            var r=getRandomInt(0,256);
-            var g=getRandomInt(0,256);
-            var b=getRandomInt(0,256);
+        function cambiarColores(color) {
+             let c=document.getElementsByTagName("p");
+            // var r=getRandomInt(0,256);
+            // var g=getRandomInt(0,256);
+            // var b=getRandomInt(0,256);
             // c=[0,1,2,3];
             // var arr=[].slice.call(c);
             // arr.forEach(element => {
             //     console.log(element);
             // });
-            for (let index = 0; index < c.length; index++) {
-                c[index].style.color= "#"+(r).toString(16)+(g).toString(16)+(b).toString(16);
+            // for (let index = 0; index < c.length; index++) {
+            //     c[index].style.color= "#"+(r).toString(16)+(g).toString(16)+(b).toString(16);
+            // }
+            //const col={rojo:"red",verde:"green",azul:"verde"};
+            // let i=0;
+            // for (let x in c) {
+            //     if(i<c.length){
+            //         c[x].style.color=color;
+            //         i++;
+            //     }
+            // } 
+
+            for(const x in c){
+                if(c.hasOwnProperty.call(c,x)){
+                    let element=c[x].style.color="blue";
+                }
             }
         }
     </script>
